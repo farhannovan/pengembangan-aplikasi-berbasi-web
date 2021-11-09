@@ -27,21 +27,23 @@
             </div>
             <div class="form">
                 <div>
+
                     <h3>
                         Ini merupakan website resmi dari mata kuliah Pengembangan Aplikasi Berbasis Web
                     </h3>
                     <p>
-                        Syarat untuk dapat login adalah registrasi dengan melampikan
+                        Syarat untuk dapat login adalah registrasi dengan melampirkan
                     </p>
-                    <img class="logo" src="uii.png" alt="uii">
+
                     <ul>
                         <li>Scan KTM</li>
                         <li>Scan KTP</li>
-                        <li>Foto</li>
+                        <li>Foto Diri 4R</li>
                     </ul>
+                    <img class="logo" src="uii.png" alt="uii">
                     <div>
                         <h4>Registrasi Data Diri</h4>
-                        <form class="reg">
+                        <form class="reg" method="post">
                             <table>
                                 <tr>
                                     <td>Nama</td>
@@ -62,7 +64,7 @@
                                     <td>Jenis Kelamin</td>
                                     <td>:</td>
                                     <td>
-                                        <input type="radio" name="jenis_kelamin" id="">Laki-Laki
+                                        <input type="radio" name="jenis_kelamin" id="" checked>Laki-Laki
                                         <input type="radio" name="jenis_kelamin" id="">Perempuan
                                     </td>
                                 </tr>
@@ -82,7 +84,7 @@
                                 <tr>
                                     <td>Fakultas</td>
                                     <td>:</td>
-                                    <td><input type="text" name="fakultas" value="FTI"></td>
+                                    <td><input type="text" name="fakultas" value="FTI" disabled></td>
                                 </tr>
                                 <tr>
                                     <td>Deskripsi diri</td>
