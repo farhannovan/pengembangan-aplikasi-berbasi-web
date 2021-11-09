@@ -2,106 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPMK PABW 1</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="main">
-        <div class="ac ad header">
-            <h1>Kelas PABW</h1>
+    <div class="container">
+        <div class="header">
+            <h1>
+                Kelas PABW
+            </h1>
         </div>
-        <div class="ac content">
-            <div class="ilf sidebar">
+        <div class="content">
+            <div class="sidebar">
                 <ul>
-                    <a href="#home">
-                        <li>Home</li>
-                    </a>
-                    <a href="#daftar_kelas">
-                        <li>Daftar Kelas</li>
-                    </a>
-                    <a href="#daftar_mahasiswa">
-                        <li>Daftar Mahasiswa</li>
-                    </a>
-                    <a href="#ubah_akun">
-                        <li>Ubah Akun</li>
-                    </a>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Daftar Kelas</a></li>
+                    <li><a href="#">Daftar Mahasiswa</a></li>
+                    <li><a href="#">Ubah Akun</a></li>
                 </ul>
             </div>
-            <div class="ilf regform">
-                <div class="ilb">
-                    <h3 class="h3">Ini merupakan website resmi dari mata kuliah<br />Pengembangan Aplikasi Berbasis Web</h3>
-                    <p>Syarat untuk dapat login ke sistem<br />adalah registrasi dengan melampirkan:</p>
+            <div class="form">
+                <div>
+                    <h3>
+                        Ini merupakan website resmi dari mata kuliah Pengembangan Aplikasi Berbasis Web
+                    </h3>
+                    <p>
+                        Syarat untuk dapat login adalah registrasi dengan melampikan
+                    </p>
+                    <img class="logo" src="uii.png" alt="uii">
                     <ul>
                         <li>Scan KTM</li>
                         <li>Scan KTP</li>
-                        <li>Foto Diri 4R</li>
+                        <li>Foto</li>
                     </ul>
-                    <img class="logo" src="uii.png" />
                     <div>
-                        <div class="reg">Registrasi Data Diri</div>
-                        <form class="scl" method="post">
+                        <h4>Registrasi Data Diri</h4>
+                        <form class="reg">
                             <table>
                                 <tr>
-                                    <td>Username</td>
+                                    <td>Nama</td>
                                     <td>:</td>
-                                    <td>
-                                        <input type="text" name="username" />
-                                    </td>
+                                    <td><input type="text" name="nama" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>Password</td>
                                     <td>:</td>
-                                    <td>
-                                        <input type="password" name="password" />
-                                    </td>
+                                    <td><input type="password" name="password" id=""></td>
                                 </tr>
                                 <tr>
-                                    <td>Konfirmasi Password</td>
+                                    <td>Konfirmasi</td>
                                     <td>:</td>
-                                    <td>
-                                        <input type="password" name="password" />
-                                    </td>
+                                    <td><input type="password" name="password" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>Jenis Kelamin</td>
                                     <td>:</td>
                                     <td>
-                                        <input type="radio" name="sex" value="p" checked /> Laki-laki<br />
-                                        <input type="radio" name="sex" /> Perempuan
-                                        <tr>
-                                            <td>Jurusan</td>
-                                            <td>:</td>
-                                            <td>
-                                                <select>
-														<option value="Teknik Kimia">Teknik Kimia</option>
-														<option value="Teknik Industri">Teknik Industri</option>
-														<option value="Informatika">Informatika</option>
-														<option value="Teknik Elektro">Teknik Elektro</option>
-														<option value="Teknik Mesin">Teknik Mesin</option>
-													</select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Fakultas</td>
-                                            <td>:</td>
-                                            <td>
-                                                <input type="text" name="fakultas" value="FTI" disabled="1" />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Deskripsi Diri</td>
-                                            <td>:</td>
-                                            <td>
-                                                <textarea style="width: 220px; height: 48px"></textarea>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><input type="submit" name="registrasi" value="Registrasi" /></td>
-                                        </tr>
+                                        <input type="radio" name="jenis_kelamin" id="">Laki-Laki
+                                        <input type="radio" name="jenis_kelamin" id="">Perempuan
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jurusan</td>
+                                    <td>:</td>
+                                    <td>
+                                        <select name="jurusan" id="">
+                                            <option value="">Teknik Kimia</option>
+                                            <option value="">Teknik Industri</option>
+                                            <option value="">Teknik Informatika</option>
+                                            <option value="">Teknik Elektro</option>
+                                            <option value="">Teknik Mesin</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Fakultas</td>
+                                    <td>:</td>
+                                    <td><input type="text" name="fakultas" value="FTI"></td>
+                                </tr>
+                                <tr>
+                                    <td>Deskripsi diri</td>
+                                    <td>:</td>
+                                    <td><textarea name="" id="" cols="24" rows="4"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <input type="submit" value="Registrasi" name="">
                                     </td>
                                 </tr>
                             </table>
@@ -110,11 +102,9 @@
                 </div>
             </div>
         </div>
-        <div class="ac ad footer">
-            <div class="ftcr">
-                <i>Copyright &copy; 2020 PABW</i><br />
-                <a href="mailto:pabw2020@uii">pabw2020@uii</a>
-            </div>
+        <div class="footer">
+            <i>Copyright &copy; 2020 PABW</i><br>
+            <a href="mailto:pabw2020@uii.ac.id">pabw2020@uii.ac.id</a>
         </div>
     </div>
 </body>
