@@ -14,12 +14,12 @@ header {
     padding: 20px;
 }
 
-.wrap {
+.container {
     width: 950px;
     margin: 25px auto;
 }
 
-nav.menu ul {
+nav ul {
     overflow: hidden;
     color: #fff;
     list-style: none;
@@ -30,12 +30,12 @@ nav.menu ul {
     background: #1abc9c;
 }
 
-nav.menu ul li {
+nav ul li {
     margin: 0;
     float: left;
 }
 
-nav.menu ul a {
+nav ul a {
     padding: 25px;
     display: block;
     font-weight: 600;
@@ -46,7 +46,7 @@ nav.menu ul a {
     text-decoration: none;
 }
 
-nav.menu ul a:hover {
+nav ul a:hover {
     text-decoration: underline;
     background: #16a085;
 }
@@ -54,7 +54,7 @@ nav.menu ul a:hover {
 
 /* Sidebar */
 
-.sidebar {
+aside {
     float: right;
 }
 
@@ -128,26 +128,26 @@ footer {
 /* Tablet */
 
 @media screen and (max-width: 960px) {
-    .wrap {
+    .container {
         width: 90%;
         margin: 25px auto;
     }
-    .sidebar {
+    aside {
         width: 100%;
         margin: 25px 0 25px;
         float: right;
     }
-    nav.menu ul {
+    nav ul {
         width: 100%;
     }
-    nav.menu ul {
+    nav ul {
         float: inherit;
     }
-    nav.menu ul li {
+    nav ul li {
         float: inherit;
         margin: 0;
     }
-    nav.menu ul a {
+    nav ul a {
         padding: 15px;
         font-size: 16px;
         border-top: 1px solid #1abf9f;
@@ -175,11 +175,11 @@ footer {
 /* Mobile */
 
 @media screen and (max-width: 460px) {
-    nav.menu ul a {
+    nav ul a {
         padding: 15px;
         font-size: 14px;
     }
-    .sidebar {
+    aside {
         width: 100%;
         margin: 25px 0 25px;
         float: right;
