@@ -1,193 +1,137 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial;
+}
+
 body {
-    background: #eee;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+	padding: 10px;
+	background: #f1f1f1;
 }
 
-
-/* Header */
-
+/* Header/Blog Title */
 header {
-    text-align: center;
-    color: #232323;
-    background-color: cadetblue;
-    padding: 20px;
+	padding: 30px;
+	text-align: center;
+	background: lightblue;
 }
 
-.container {
-    width: 950px;
-    margin: 25px auto;
+header h1 {
+	font-size: 50px;
 }
 
-nav ul {
-    overflow: hidden;
-    color: #fff;
-    list-style: none;
-    float: left;
-    width: 650px;
-    padding: 0;
-    margin: 0 0 0;
-    background: #1abc9c;
+main {
+	padding: 20px 0;
 }
 
-nav ul li {
-    margin: 0;
-    float: left;
+/* Style the top navigation bar */
+nav {
+	background-color: #333;
+	float: left;
+	width: 10%;
+	display: grid;
 }
 
-nav ul a {
-    padding: 25px;
-    display: block;
-    font-weight: 600;
-    font-size: 16px;
-    color: #fff;
-    text-transform: uppercase;
-    transition: all 0.5s ease;
-    text-decoration: none;
+/* Style the topnav links */
+nav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
-nav ul a:hover {
-    text-decoration: underline;
-    background: #16a085;
+/* Change color on hover */
+nav a:hover {
+	background-color: #ddd;
+	color: black;
 }
 
+.nav-links {
+	padding: 20px;
+	background-color: cadetblue;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 16px;
+}
 
-/* Sidebar */
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+article {
+	background-color: white;
+	float: left;
+	width: 70%;
+	padding: 20px;
+	text-align: center;
+}
 
+article p {
+	text-align: justify;
+}
+
+/* Right column */
 aside {
-    float: right;
+	background-color: lightyellow;
+	float: left;
+	width: 20%;
+	padding: 24px;
 }
 
-form {
-    border: solid 1px #ccc;
-    padding: 20px;
-    width: auto;
+img {
+	width: 100%;
+	align-items: center;
 }
 
-input {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
+/* Clear floats after the columns */
+main:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
-.form-item {
-    margin-bottom: 12px;
-}
-
-button {
-    width: 100%;
-}
-
-
-/* Content */
-
-.post-title {
-    font-size: 32px;
-    margin: -10px 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-}
-
-.blog {
-    float: left;
-}
-
-.content {
-    width: 600px;
-    padding: 25px;
-    margin: 25px auto;
-    background: #fff;
-    border: 1px solid #dedede;
-    box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.35);
-}
-
-.content img {
-    min-width: 650px;
-    margin: 0 0 25px -25px;
-    max-width: 650px;
-}
-
-.content {
-    color: #000;
-    transition: all 0.5s ease;
-    text-decoration: none;
-}
-
+/* Footer */
 footer {
-    bottom: 0;
-    width: 100%;
-    position: fixed;
-    background: cadetblue;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+	padding: 20px;
+	text-align: center;
+	background: lightblue;
+	/* margin-top: 20px; */
 }
-
 
 /* Tablet */
+@media only screen and (min-width: 460px) and (max-width: 960px) {
+	nav {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
 
-@media screen and (max-width: 960px) {
-    .container {
-        width: 90%;
-        margin: 25px auto;
-    }
-    aside {
-        width: 100%;
-        margin: 25px 0 25px;
-        float: right;
-    }
-    nav ul {
-        width: 100%;
-    }
-    nav ul {
-        float: inherit;
-    }
-    nav ul li {
-        float: inherit;
-        margin: 0;
-    }
-    nav ul a {
-        padding: 15px;
-        font-size: 16px;
-        border-top: 1px solid #1abf9f;
-        border-bottom: 1px solid #16a085;
-    }
-    .blog {
-        width: 90%;
-    }
-    .content {
-        float: inherit;
-        margin: 0 auto 25px;
-        width: 101%;
-        border: 1px solid #dedede;
-        padding: 5%;
-        background: #fff;
-    }
-    .content img {
-        max-width: 110%;
-        margin: 0 0 25px -5%;
-        min-width: 110%;
-    }
+	article {
+		width: 60%;
+		height: 1000px;
+		float: left;
+	}
+
+	aside {
+		width: 40%;
+		float: right;
+	}
 }
 
-
 /* Mobile */
-
 @media screen and (max-width: 460px) {
-    nav ul a {
-        padding: 15px;
-        font-size: 14px;
-    }
-    aside {
-        width: 100%;
-        margin: 25px 0 25px;
-        float: right;
-    }
-    .content {
-        margin: 25px auto;
-    }
-    .content img {
-        margin: -5% 0 25px -5%;
-    }
+	nav {
+		display: contents;
+	}
+
+	nav a {
+		float: none;
+		width: 100%;
+	}
+
+	article,
+	aside {
+		width: 100%;
+	}
 }

@@ -2,76 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>20523025</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPMK PABW 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
-        <h1>Ujian CPMK Informatika UII</h1>
-        <p>Farhan Novan | 20523025 | Kelas A</p>
+        <h1>Ujian CPMK PABW</h1>
+        <p>Farhan Novan Fauzi | 20523025 | Kelas A</p>
     </header>
 
-    <!-- Navbar -->
-    <div class="container">
+    <main>
         <nav>
-            <ul>
-                <li>
-                    <a href="#" id="linkHome">Home</a>
-                </li>
-                <li>
-                    <a href="#">Profil</a>
-                </li>
-                <li>
-                    <a href="#" id="linkLogout">Logout</a>
-                </li>
-            </ul>
+            <a href="#" class="nav-links">Home</a>
+            <a href="#" class="nav-links">Profil</a>
+            <a href="#" class="nav-links">Logout</a>
         </nav>
 
-        <!-- Content -->
-        <div class="blog">
-            <div class="content">
-                <div class="post-title">Lorem ipsum</div>
-                <img src="https://informatics.uii.ac.id/wp-content/uploads/2021/09/Photo-by-Phillip-Glickman-on-Unsplash-1030x412.jpg" alt="hero" />
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde deserunt a eius similique quia enim exercitationem quas ex molestias, voluptates repudiandae impedit officia amet explicabo maiores ea saepe quam sunt, repellendus expedita dignissimos, eaque
-                    cumque. Enim quaerat, tempora dignissimos expedita corrupti dicta neque sapiente necessitatibus quidem voluptatum nam eaque perspiciatis, velit dolorum dolorem praesentium cum numquam mollitia explicabo doloribus? Deleniti commodi
-                    dolorem, dicta tempore eum aliquid reprehenderit, unde enim aliquam omnis accusamus dolores delectus maiores veniam beatae explicabo, recusandae voluptatem natus culpa temporibus. Ad doloremque atque ipsam rem nulla aut rerum nam quo
-                    repellendus tempore. Accusantium consequatur unde magni vitae.
-                </p>
-            </div>
-        </div>
+        <article>
+            <h2>LOREM IPSUM</h2>
+            <img src="https://informatics.uii.ac.id/wp-content/uploads/2021/09/Photo-by-Phillip-Glickman-on-Unsplash-1030x412.jpg"
+                alt="robot">
+            <p>Lorem Ipsum..</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis obcaecati quibusdam minus nisi facere
+                minima sed, maxime nihil, pariatur nesciunt fugiat molestias deleniti. Deserunt, quidem repudiandae!
+                Iste accusantium laudantium dolorum ducimus quis obcaecati corrupti nulla nobis fugiat sequi nemo, eius
+                quibusdam voluptatum, veritatis cum omnis repellat quasi saepe, aperiam error. Culpa perferendis, nihil
+                sapiente necessitatibus fugit odio, esse incidunt eveniet placeat pariatur eos cum obcaecati distinctio.
+                Ducimus, non eveniet explicabo veritatis nihil cum cupiditate tenetur voluptates omnis delectus
+                accusamus, totam ad quia minima. Officiis necessitatibus quia dolorum amet nihil dolor tenetur hic
+                commodi fugiat? Nobis aut est libero debitis nostrum pariatur accusamus explicabo culpa qui! In cumque
+                odit sapiente facere saepe? Libero amet totam cupiditate? Temporibus dolorum sed distinctio quasi
+                impedit. Porro accusantium consectetur quia eius nisi atque explicabo vitae at corrupti natus expedita
+                cumque fugiat nulla commodi, culpa molestiae a et pariatur qui. Dolores, provident illum doloribus omnis
+                saepe ea maiores temporibus, esse unde adipisci sapiente ipsum. Tenetur non illo optio quibusdam numquam
+                aperiam hic beatae vel labore laborum vitae vero maxime aliquam explicabo iusto, quod eum at ab. Optio
+                iusto veniam tenetur quam, voluptates quaerat vero architecto modi ea, quasi perspiciatis. Suscipit
+                debitis dolorem minima error perspiciatis explicabo.</p>
+        </article>
 
-        <!-- Sidebar -->
         <aside>
-            <form>
-                <h2>Login/Registrasi</h2>
-                <div class="form-item">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username" placeholder="username" />
-                </div>
-                <div class="form-item">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="password" />
-                </div>
-                <div>
-                    <button onclick="checkForm()">Login</button>
-                </div>
-                <div>
-                    <div>Jika belum memiliki akun, klik</div>
-                    <a href="#">Registrasi</a>
-                </div>
+            <h2>Login/Registrasi</h2>
+            <form action="#" name="form" onsubmit="return validasiUser()" method="post">
+                <p class="username"> Username :<input type="text" placeholder="Username" name="username" /></p>
+                <p class="password"> Password : <input type="text" placeholder="Password" name="password" /></p>
+                <button type="submit" class="login">Login</button>
+                <p>Jika belum memiliki akun,klik</p>
+                <a href="#"> Registrasi</a>
+                <p id=notif>notifikasi login</p>
             </form>
         </aside>
-    </div>
+    </main>
 
     <footer>
-        <p id="footer">Copyright 2021 | 20523025@students.uii.ac.id</p>
+        <p>Copyright 2021 | 20523025@student.uii.ac.id</p>
     </footer>
-    <script src="script.js"></script>
+
 </body>
 
 </html>
