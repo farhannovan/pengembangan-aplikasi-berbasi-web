@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@400;500;600;700;800&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: "Poppins", sans-serif;
+}
+
+h4 {
+	background-color: #00acec;
+	text-align: center;
+	padding: 8px;
+	margin-top: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #f0e5cc;
+	padding: 30px;
+	display: flex;
+	border: 1px solid#000;
+}
+
+header h1 {
+	margin: auto;
+}
+
+aside {
+	padding-inline-end: 40px;
+	border-left: 1px solid #000;
+}
+
+aside ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+aside ul a {
+	color: blue;
+	text-decoration: none;
+}
+
+aside ul a:hover {
+	color: #000;
+}
+
+aside ul li {
+	padding: 10px;
+}
+
+.content {
+	display: flex;
+}
+
+.form {
+	width: 100%;
+	padding: 20px;
+	background-color: #c6f7df;
+	border-right: 1px solid #000;
+}
+
+button {
+	padding: 8px;
+}
+
+footer {
+	background-color: #f0e5cc;
+	padding: 30px;
+	text-align: center;
+	border: 1px solid #000;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+a.button {
+	text-decoration: none;
+	border: 2px solid #00acec;
+	padding: 10px 20px 10px 20px;
+	border-radius: 2px;
+	color: #00acec;
+}
+a.button:hover {
+	color: #ffffff;
+	background-color: #009fdb;
+}
+
+td.index {
+	text-align: center;
+}
